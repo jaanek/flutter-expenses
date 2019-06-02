@@ -4,11 +4,11 @@ class AsyncFetch<T> {
 
   AsyncFetch({this.data, this.error});
 
-  hasData() {
+  bool hasData() {
     return data != null;
   }
 
-  hasError() {
+  bool hasError() {
     return error != null;
   }
 }
