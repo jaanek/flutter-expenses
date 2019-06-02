@@ -1,14 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:wallet9/wallet9.dart';
+import 'package:wallet9/async_fetch.dart';
+import './models/expense_group.dart';
+import './models/expense.dart';
+import './models/category_listing_section.dart';
 import './utils.dart';
 
-class CategoryListing extends HookWidget {
+class CategoryListingWidget extends HookWidget {
   ExpenseGroup group;
-  // NB! It is better to fetch group listing in here and not provide all expenses from parent
   List<Expense> allExpenses;
 
-  CategoryListing({this.group, this.allExpenses});
+  // NB! It is better to fetch the expenses listing for the group from server
+  // in here and not provide all the expenses from parent
+  CategoryListingWidget({this.group, this.allExpenses});
 
   Widget buildBody(AsyncFetch<List<CategoryListingSection>> result) {
     if (result.hasError()) {

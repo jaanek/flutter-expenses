@@ -1,5 +1,5 @@
 import 'dart:collection';
-import './utils.dart';
+import '../utils.dart';
 
 class Expense {
   int id;

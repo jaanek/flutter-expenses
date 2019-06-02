@@ -1,5 +1,3 @@
-import './expense.dart';
-
 class ExpenseGroup {
   String category;
   double amount;

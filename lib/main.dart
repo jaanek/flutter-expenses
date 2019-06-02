@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wallet9/wallet9.dart';
+import 'expenses/overview_widget.dart';
 
 void main() => runApp(Main());
 
@@ -12,7 +12,7 @@ class Main extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: ExpensesOverview(),
+      home: ExpensesOverviewWidget(),
     );
   }
 }
