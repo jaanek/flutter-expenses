@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'expenses/overview_widget.dart';
 
-void main() => runApp(Main());
+void main() => runApp(Wallet9());
 
-class Main extends StatelessWidget {
+class Wallet9 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
