@@ -4,7 +4,7 @@ The project shows the expenses grouped by categories and an ability to see into 
 
 # Development
 
-To run the server (node.js): `npm install` and `npm start`
+To run the server (node.js): `cd server/`, `npm install` and `npm start`
 
 To run the app: `flutter run`
 
