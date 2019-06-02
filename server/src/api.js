@@ -6,7 +6,7 @@ export function register(app) {
 
 function lastTransactions(req, res) {
   try {
-    // fake delay to emulate long upload
+    // fake delay to emulate long query
     setTimeout(() => {
       res.send({
         success: true,
